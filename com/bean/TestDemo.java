@@ -5,7 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class Main {
+public class TestDemo {
 
     public static void main(String[] args) {
         System.out.println("开始执行测试");
@@ -48,7 +48,7 @@ public class Main {
 
         //5.持久化对象 也就是保存，相当于直接给表插入数据了
         session.saveOrUpdate(stu);//此时stu就是一个Persistent(持久化对象)
-
+        stu.setNickname("不想长大");
         //6.提交事务
         tran.commit();
 
