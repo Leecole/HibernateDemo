@@ -1,4 +1,6 @@
-public class User {
+package com.bean;
+
+public class student {
     private int userId;
     private String username;
     private String password;
@@ -71,7 +73,7 @@ public class User {
         this.headImage = headImage;
     }
 
-    public User(int userId, String username, String password, String sex, String nickname, int age, String email, String headImage) {
+    public student(int userId, String username, String password, String sex, String nickname, int age, String email, String headImage) {
         this.userId = userId;
         this.username = username;
         this.password = password;
@@ -86,7 +88,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "student{" +
                 "userId=" + userId +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
@@ -98,6 +100,6 @@ public class User {
                 '}';
     }
 
-    public User() {
+    public student() {
     }
 }
