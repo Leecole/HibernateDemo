@@ -11,7 +11,7 @@ public class TestDemo {
         System.out.println("开始执行测试");
 
         //创建一个user对象，对user表进行增加一条数据
-        student stu =new student();
+        user stu =new user();
 
         //为user表添加一条数据
         stu.setUsername("jack");
